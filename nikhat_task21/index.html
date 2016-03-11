@@ -1,0 +1,62 @@
+<!Doctype>
+<html>
+	<head>
+		<title>Media Query Example</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="logo">
+					<button onclick="show()"><img src="Images/show.jpg" alt="" width="50px" height="50px" /></button>
+					<h1><a><img src="Images/logo2.jpg" alt="logo" /></a></h1>
+				</div>
+				<div class="menu">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Logs</a></li>
+						<li><a href="#">Contacts</a></li>
+						<li><a href="#">About US</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<section id="content">
+			<div class="detail" id="dt">                                                                                                 
+				<img src="images/img.jpg" alt="" />
+				<p>There is some text about the image.Not yet ready to write here.Actually no word to say about this awsome pic</p>
+			</div>
+			<div class="detail">
+				<img src="images/img1.jpg" alt="" />
+				<p>There is some text about the image.Not yet ready to write here.Actually no word to say about this awsome pic.</p>
+			</div>
+			<div class="detail">
+				<img src="images/img2.jpg" alt="" />
+				<p>There is some text about the image.Not yet ready to write here.Actually no word to say about this awsome pic</p>
+			</div>
+			<div class="detail">
+				<img src="images/img3.jpg" alt="" />
+				<p>There is some text about the image.Not yet ready to write here.Actually no word to say about this awsome pic</p>
+			</div>
+			<div class="detail">
+				<img src="images/img4.jpg" alt="" />
+				<p>There is some text about the image.Not yet ready to write here.Actually no word to say about this awsome pic</p>
+			</div>
+			<div class="detail">
+				<img src="images/img5.jpg" alt="" />
+				<p>There is some text about the image.Not yet ready to write here.Actually no word to say about this awsome pic</p>
+			</div>
+		</section>
+	</body>
+	<script>
+		function show(){
+			var x=document.getElementsByClassName("menu");
+			if(x[0].style.display == "none")
+				x[0].style.display = "block";
+			else
+				x[0].style.display = "none";
+		}
+	</script>
+</html>
